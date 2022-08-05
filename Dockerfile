@@ -5,7 +5,7 @@ RUN version=1.9.11 && \
     file=moin-${version}.tar.gz && \
     sha256sum=02be31d55f39d4fe0c6253df8b49e01b76d095634cbd1b56d185f66e1e0c3 && \
     apk --no-cache --no-progress upgrade && \
-    apk --no-cache --no-progress add bash curl py2-markdown tini tzdata \
+    apk --no-cache --no-progress add bash curl py3-markdown tini tzdata \
                 uwsgi-python shadow && \
     echo "downloading $file ..." && \
     curl -LOSs http://static.moinmo.in/files/$file && \
