@@ -86,6 +86,7 @@ else
     [[ "${LANG:-""}" ]] || export LANG=en_US.UTF-8
     exec uwsgi --uid uwsgi \
                 -s /tmp/uwsgi.sock \
+                -b 32768 \
                 --uwsgi-socket 0.0.0.0:3031 \
                 --plugins python \
                 --pidfile /tmp/uwsgi-moinmoin.pid \

@@ -1,5 +1,4 @@
-FROM alpine:3.10
-MAINTAINER David Personette <dperson@gmail.com>
+FROM alpine:3.16
 
 # Install uwsgi and MoinMoin
 RUN version=1.9.11 && \
